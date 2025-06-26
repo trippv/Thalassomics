@@ -3495,9 +3495,9 @@ input, select, textarea {
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
-			padding: 6em;
+			padding: 3em; /* Reducido de 6em a 3em para mejor ajuste */
 			position: relative;
-			text-align: right;
+			text-align: center; /* Cambiado a center para mejor legibilidad en móviles */
 			vertical-align: middle;
 			z-index: 1;
 		}
