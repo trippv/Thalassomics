@@ -4116,3 +4116,99 @@ input, select, textarea {
 					}
 
 	}
+
+	/* --- Estilos para el Banner Responsivo --- */
+
+/* Contenedor del logo */
+.banner-logo-container {
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Logo del banner */
+.banner-logo {
+    max-width: 200px; /* Tamaño máximo para pantallas grandes */
+    height: auto;
+}
+
+/* Título principal del banner */
+.banner-title {
+    font-size: 4.5em; /* Tamaño base para pantallas grandes */
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+/* Parte azul/verde del título */
+.color-thalass {
+    color: rgb(56, 135, 141);
+}
+
+/* Parte blanca del título */
+.color-omics {
+    color: white;
+}
+
+/* Subtítulo del banner */
+.banner-subtitle {
+    font-size: 2.6em; /* Tamaño base para pantallas grandes */
+}
+
+/* Descripción del banner */
+.banner-description {
+    font-size: 1.5em; /* Tamaño base para pantallas grandes */
+}
+
+/* --- Media Queries para Dispositivos Más Pequeños --- */
+
+/* Para pantallas de hasta 980px (típicamente tablets en modo landscape) */
+@media screen and (max-width: 980px) {
+    .banner-title {
+        font-size: 3.5em; /* Reduce el tamaño del título */
+    }
+    .banner-subtitle {
+        font-size: 2em; /* Reduce el tamaño del subtítulo */
+    }
+    .banner-description {
+        font-size: 1.2em; /* Reduce el tamaño de la descripción */
+    }
+    .banner-logo {
+        max-width: 150px; /* Reduce el tamaño máximo del logo */
+    }
+}
+
+/* Para pantallas de hasta 736px (típicamente tablets en modo portrait y móviles grandes) */
+@media screen and (max-width: 736px) {
+    .banner-title {
+        font-size: 2.8em; /* Más reducción para el título */
+    }
+    .banner-subtitle {
+        font-size: 1.6em; /* Más reducción para el subtítulo */
+    }
+    .banner-description {
+        font-size: 1em; /* Más reducción para la descripción */
+    }
+    .banner-logo {
+        max-width: 120px; /* Más reducción para el logo */
+    }
+}
+
+/* Para pantallas de hasta 480px (típicamente móviles) */
+@media screen and (max-width: 480px) {
+    .banner-title {
+        font-size: 2em; /* Tamaño para móviles */
+    }
+    .banner-subtitle {
+        font-size: 1.3em; /* Tamaño para móviles */
+    }
+    .banner-description {
+        font-size: 0.9em; /* Tamaño para móviles */
+    }
+    .banner-logo {
+        max-width: 100px; /* Tamaño para móviles */
+    }
+    /* Puedes añadir más ajustes aquí si es necesario para el espaciado o posicionamiento */
+    #banner .content {
+        padding: 1em; /* Ajusta el padding del contenido del banner */
+    }
+}
